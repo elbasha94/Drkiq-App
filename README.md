@@ -1,6 +1,5 @@
 # Docker Compose
-- I followed these instruction
-- https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application
+- I followed instruction you mentioned: https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application
 - made my docker-compose.yml and up my application
 - passed environment variable not by .env, i put it in docker-compose.yml
 - published all my images genereted from dockerfiles to my docker hub.
