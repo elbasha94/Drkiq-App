@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: drkiq-nginx
+  namespace: default
+  annotations:
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "demo.com"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: nginx
+            port:
+              number: 8010
